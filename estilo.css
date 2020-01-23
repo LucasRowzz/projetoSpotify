@@ -1,0 +1,52 @@
+/*
+*
+*
+* @author Lucas Araujo
+* @version 0.1
+*/
+
+/* ========================= layout ============= */
+
+
+
+
+
+/* -- Barra de navegação -- */
+.img-logo {
+	height: 40px;
+	width: 132px;
+	display: block;
+	background:url('imagens/spotify.svg') no-repeat;
+	background-size: contain; /*para definir tamnho da imagem de fundo */
+	color: transparent; /*sempre teremos q deixar o texto e a imagem, para leitores de tela */
+	
+}
+/*Deixando a barra transparente*/
+nav.navbar-transparente {
+	padding: 15px 0px;
+	background:rgba(0,0,0, 0.6);
+	border:none;
+}
+/*Formantando a posição da logo*/
+.navbar-brand {
+	padding: 5px 15px;
+}
+/*Criando aquele divisor entre o "Baixar" e o "Inscreva-se" */
+.divisor {
+	width: 1px;
+	height: 16px;
+	background:white;
+	margin: 16px 10px;
+}
+
+/*Formatando links*/
+.navbar-inverse .navbar-nav>li>a {
+	color: white;
+}
+.navbar-inverse .navbar-nav>li>a:hover {
+	color: #9bf0e1;
+}
+/* =================================== Tipografia ========================*/
+
+
+
