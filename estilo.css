@@ -6,10 +6,18 @@
 */
 
 /* ========================= layout ============= */
-
-
-
-
+/* Para ocupar 100% do espaço */
+html, body, .capa {
+	height: 100%;
+}
+/* Colocando as imagens de fundo */
+body {
+	font-family: Helvetica, Arial,  sans-serif;
+	background: url('imagens/capa.png'),
+				url('imagens/ruido.png'),
+				linear-gradient(50deg,#ff4169,#7c26f8);
+	background-attachment: fixed; /*deixa o background parado, */
+}
 
 /* -- Barra de navegação -- */
 .img-logo {
@@ -46,7 +54,52 @@ nav.navbar-transparente {
 .navbar-inverse .navbar-nav>li>a:hover {
 	color: #9bf0e1;
 }
-/* =================================== Tipografia ========================*/
 
+/* Imagem de capa */
+.capa {
+	border:1px solid red;
+	display:table; /*um dos passos para centralizar verticalmente nossa capa, deixa o comportamento como de tablea*/
+	width: 100%;
+}
+.texto-capa {
+	text-align: center;
+	color: white;
+	display:table-cell;
+	vertical-align: middle;
+}
+
+/* Confirando os botões */
+.btn-custom {
+	color: white;
+	border-radius: 500px;
+	/* Colocando para funcionar em outros browsers o radius */
+	-webkit-border-radius:500px;
+	-moz-border-radius:500px;
+	padding:10px 35px;
+	margin: 0px 15px;
+	text-transform: uppercase; /*Deixar as letras maiúsculas*/
+	transition: background 0.4s, color 0.4s; /*para deixar uma transição mais suave ao passar o cursor */
+}
+.btn-roxo {
+	background:#7c25f8;
+}
+.btn-roxo:hover {
+	background-color: #6207e3;
+	color: white;
+}
+.btn-branco:hover {
+	background-color: white;
+	color:black;
+}
+.btn-branco {
+	border:2px solid white;
+}
+/* =================================== Tipografia ========================*/
+h1 {
+	font-size: 100px;
+	font-weight: 900;
+	letter-spacing: -0.05em; /*espaçamento das letras */
+	margin-bottom: 50px;
+}
 
 
