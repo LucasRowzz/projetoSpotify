@@ -17,6 +17,8 @@ body {
 				url('imagens/ruido.png'),
 				linear-gradient(50deg,#ff4169,#7c26f8);
 	background-attachment: fixed; /*deixa o background parado, */
+	/* Overflow hidden, serve para tirar a barra de rolagem, horizontalmente ou verticalmente */
+	overflow-x: hidden;
 }
 
 /* -- Barra de navegação -- */
@@ -104,7 +106,21 @@ nav.navbar-transparente {
 	padding: 10px 0px 10px 0px;
 }
 
+/* ----------- Recursos ---------- */
 
+#recursos {
+	padding-top:20px;
+	padding-bottom:20px;
+	color: white;
+}
+
+.rotacionar {
+	/* Para rotacionar a foto dos iphones. */
+	transform: rotate(30deg);
+	-ms-transform: rotate(30deg); /*IE9 */
+	-webkit-transform: rotate(30deg); /*Chrome, Safari, Opera */
+	padding-left: 80px;;
+}	
 
 /* =================================== Tipografia ========================*/
 h1 {
@@ -127,4 +143,12 @@ h3 {
 #servicos h2, #servicos h3 {
 	color: #7C25F8;
 }
-
+#recursos h3 {
+	color:#9bf0e1;
+}
+#recursos h1 {
+	font-size: 70px;;;
+	color:white;
+	font-weight: 700;
+	letter-spacing: -0.04em;
+}
