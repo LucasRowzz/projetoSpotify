@@ -50,11 +50,13 @@ nav.navbar-transparente {
 }
 
 /*Formatando links*/
-.navbar-inverse .navbar-nav>li>a {
+.navbar-inverse .navbar-nav>li>a, footer .nav a {
 	color: white;
 }
-.navbar-inverse .navbar-nav>li>a:hover {
+.navbar-inverse .navbar-nav>li>a:hover, footer .nav a:hover {
 	color: #9bf0e1;
+	/* Tira qualquer background que tenha */
+	background:none;
 }
 
 /* Imagem de capa */
@@ -122,6 +124,18 @@ nav.navbar-transparente {
 	padding-left: 80px;;
 }	
 
+/* ------------------- RODAPE ------------------ */
+footer {
+	background: #000;
+	padding:50px 0px 20px 0px; 
+	/* Esse position relative vai deixar em cima da imagem dos iphones */
+	position: relative;
+}
+
+.item-rede-social {
+	float:right;
+}
+
 /* =================================== Tipografia ========================*/
 h1 {
 	font-size: 100px;
@@ -151,4 +165,11 @@ h3 {
 	color:white;
 	font-weight: 700;
 	letter-spacing: -0.04em;
+}
+
+#rodape h4 {
+	color:#919496;
+	font-size:12px;
+	/* deixar em maíusculo */
+	text-transform: uppercase;
 }
